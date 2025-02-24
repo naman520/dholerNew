@@ -1,17 +1,11 @@
-import Head from "next/head";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-
 import About from "../components/about";
-import Deals from "../components/deals";
 import Services from "../components/services";
 import Review from "../components/review";
-import Insta from "../components/insta";
-import Form from "../components/form";
 import scrollIcon from "../assets/icons/topArrowIcon.png";
-
-import Footer from "@/components/footer";
 import Hero from "@/components/hero";
+import Whatsapp from "@/components/whatsapp";
 
 const HomePage = () => {
   const [showButton, setShowButton] = useState(false);
@@ -43,7 +37,7 @@ const HomePage = () => {
         phone="+91 9958993549"
         email="info@dholerinsider.com"
       />
-
+      <Whatsapp/>
       <About
         cardTitle1="15 years"
         cardSubText1="in business"
@@ -53,11 +47,8 @@ const HomePage = () => {
         cardSubText3="transactions"
       />
       <Services />
-      <Deals />
       <Review />
-      <Insta />
-      <Form />
-      <Footer />
+      
       {showButton && (
         <div className="fixed bottom-24 right-10 z-50">
           <button

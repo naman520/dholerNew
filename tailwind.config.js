@@ -18,7 +18,10 @@ module.exports = {
         bgDark: '#17202a',
         cardText: '#6B7A99',
       },
-    },
+    },animation: {
+      'spin-slow': 'spin 5s linear infinite',
+    }
   },
+  
   plugins: [],
 };

@@ -52,14 +52,12 @@ const Hero = ({ address, phone, email }) => {
                   <label
                     htmlFor="name"
                     className="block text-sm font-medium text-gray-200 "
-                  >
-                    Full Name
-                  </label>
+                  ></label>
                   <input
                     type="text"
                     id="name"
                     className="w-full px-4 py-3 bg-gray-200/50 dark:bg-gray-900/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder-gray-700 dark:placeholder-gray-400  outline-none transition-all duration-300"
-                    placeholder="John Doe"
+                    placeholder="Full Name"
                     required
                   />
                 </div>
@@ -68,14 +66,12 @@ const Hero = ({ address, phone, email }) => {
                   <label
                     htmlFor="email"
                     className="block text-sm font-medium text-gray-200"
-                  >
-                    Email Address
-                  </label>
+                  ></label>
                   <input
                     type="email"
                     id="email"
                     className="w-full px-4 py-3 bg-gray-200/50 dark:bg-gray-900/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder-gray-700 dark:placeholder-gray-400 outline-none transition-all duration-300"
-                    placeholder="john@example.com"
+                    placeholder=" Email Address"
                     required
                   />
                 </div>
@@ -84,14 +80,12 @@ const Hero = ({ address, phone, email }) => {
                   <label
                     htmlFor="phone"
                     className="block text-sm font-medium text-gray-200"
-                  >
-                    Phone Number
-                  </label>
+                  ></label>
                   <input
                     type="tel"
                     id="phone"
                     className="w-full px-4 py-3 bg-gray-200/50 dark:bg-gray-900/50 border border-gray-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent text-white placeholder-gray-700 dark:placeholder-gray-400 outline-none transition-all duration-300"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="Phone Number"
                     required
                   />
                 </div>
@@ -106,37 +100,6 @@ const Hero = ({ address, phone, email }) => {
             </div>
           </div>
 
-          {/* Icons and Text under Heading */}
-          <div className="hidden sm:flex mt-24 justify-center items-center">
-            <div className="flex mr-11 ">
-              <Image
-                src={arrowIcon}
-                alt="arrow icon"
-                className="w-5 h-5 mx-9 self-center"
-              />
-              <p className="text-white text-xl py-2 lg:w-[400px] w-auto">
-                {address}
-              </p>
-            </div>
-
-            <div className="flex ml-20 mr-20">
-              <Image
-                src={phoneIcon}
-                alt="phone icon"
-                className="w-5 h-5 mx-9 self-center"
-              />
-              <p className="text-white text-xl py-2">{phone}</p>
-            </div>
-
-            <div className="flex ml-20">
-              <Image
-                src={mailIcon}
-                alt="mail icon"
-                className="w-5 h-5 mx-9 self-center"
-              />
-              <p className="text-white text-xl py-2">{email}</p>
-            </div>
-          </div>
           {/* Show more button  */}
           <div className="  absolute -bottom-20 w-full text-center ">
             <button

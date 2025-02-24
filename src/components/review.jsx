@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-
 import userImg from '../assets/images/user1.png';
 import userImg1 from '../assets/images/user2.png';
 import userImg2 from '../assets/images/user3.png';

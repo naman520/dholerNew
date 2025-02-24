@@ -1,117 +1,50 @@
-import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import starIcon from "../assets/icons/starIcon.png";
-import rightArrowIcon from "../assets/icons/rightArrowIcon.png";
+import React from "react";
+
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div className="relative p-4 mx-[10px] border-t-2 border-solid border-[#EDEFF2]">
-      {/* Row 1 */}
-      <div className="sm:flex justify-center items-center py-[20px] sm:py-[90px] px-2 ">
-        {/* text  */}
-        <p className="text-2xl text-center leading-[30px] font-bold text-[#4D5E80] capitalize mb-10 sm:mb-0 dark:text-white">
-          constructor
-        </p>
-        {/* menu  */}
-        <div className="relative flex gap-5 justify-center items-centers  sm:w-[450px] ">
-          <ul className="grid  sm:grid-cols-3 gap-5 text-center sm:gap-10 ">
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Gallery
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Deals
-              </Link>
-            </li>
-            <li>
-              <Link href="/" className="py-2 hover:text-orange-500">
-                Contacts
-              </Link>
-            </li>
-          </ul>
-        </div>
-        {/* rating */}
-        <div className="flex flex-col items-center sm:items-start gap-1 mt-5 sm:mt-0">
-          <div className="flex">
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
-            <Image
-              src={starIcon}
-              alt="ratings "
-              className="w-[30px] h-[30px]"
-            />
+    <div className="bg-[#17202a]  text-white">
+
+    <div className="relative pt-10 p-4 mx-[10px] border-t-2 border-solid border-[#EDEFF2]">
+      <div className="gap-10 md:grid md:grid-flow-col md:grid-cols-3 justify-items-center items-center max-sm:text-center ">
+        <div className="space-y-2">
+          <h2 className="text-lg">Contact Us</h2>
+          <div className="max-sm:grid max-sm:grid-flow-row grid-rows-3 text-sm text-nowrap ">
+            <p className="break-words">
+              620 JMD Megapolis, Sector-48, Sohna Road, Gurugram, India
+            </p>
+            <p className="break-words">+91 9958993549</p>
+           
           </div>
-          <div className="flex justify-center items-center p-2">
-            <p>5.2M satisfied customers</p>
+        </div>
+        <div>
+          <div className="space-y-2">
+            <h2 className="text-lg">Social Media</h2>
+            <div className=" grid-col-3 text-sm grid ">
+              <Link href={""} className="break-words">Facebook</Link>
+              <Link href={"https://www.instagram.com/dholera.insider?igsh=MWNnYzc5OG40a2dr"} className="break-words">Instagram</Link>
+              <Link href={""} className="break-words">Twitter (X)</Link>
+              <Link href={"https://www.linkedin.com/in/dholera-insider-1a6b57351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"} className="break-words">LinkedIn</Link>
+              <Link href={"https://youtube.com/@dholerainsider?si=ZcBtHqUhtxqi90dY"} className="break-words">YouTube</Link>
+  
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="space-y-2">
+            <h2 className="text-lg">Contact Us</h2>
+            <div className="max-sm:grid max-sm:grid-flow-row grid-rows-3 text-sm text-nowrap ">
+              <p className="break-words">620 JMD Megapolis</p>
+              <p className="break-words">+91 9958993549</p>
+              
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Row 2 */}
-
-      <div className="relative py-0 px=[340px] border-t-2 border-solid border-[#EDEFF2] flex items-center justify-between gap-5">
-        <p className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText dark:text-white">
-          © {year} Company. All Rights Reserved.
-        </p>
-        <Link
-          href="https://www.figma.com/community/file/1216698613875563555/Company-One"
-          target="_blank"
-          className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText hover:text-orange-500 dark:text-white"
-        >
-          Design by Spline One
-        </Link>
-        <div className="flex items-start p-4 gap-[57px]">
-          <Link
-            href="#"
-            className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText hover:text-orange-500 dark:text-white"
-          >
-            terms
-          </Link>
-          <Link
-            href="#"
-            className="capitalize text-[10px] sm:text-[13px] font-semibold leading-[25px] text-center text-bluePText  hover:text-orange-500 dark:text-white"
-          >
-            privacy
-          </Link>
-        </div>
-      </div>
+    </div>
+    <p className="text-center pt-2">Copyright &copy; 2025 Dholera Insider | All Rights Reserved</p>
     </div>
   );
 };

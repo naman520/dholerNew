@@ -12,7 +12,7 @@ import cardImageBg9 from '../assets/images/Image-9.png';
 
 const HomeCardComponent = () => {
   return (
-    <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-5 m-5 p-5 ">
+    <div className="flex flex-col sm:grid md:grid-cols-2 xl:grid-cols-3 gap-16 m-3 p-2 md:pr-10 ">
       <Card
         imageSrc={cardImageBg1}
         title="Modern Glass House"
@@ -128,7 +128,7 @@ const Tabs = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   return (
-    <div className="flex flex-col justify-center items-center  ">
+    <div className="flex flex-col justify-between items-center ">
       <div className="flex ">
         {tabs.map((tab, idx) => (
           <button

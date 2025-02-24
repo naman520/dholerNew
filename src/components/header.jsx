@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
-import searchIcon from '../../src/assets/icons/search.png';
+
 import logo from "../../src/assets/icons/logo.webp";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import ThemeChanger from './themeChanger';
@@ -45,28 +45,25 @@ const Header = () => {
 
       {/* Search Bar */}
       <div className="hidden sm:flex">
-        <Image src={searchIcon} alt="Search" className="w-4 h-4 self-center" />
-        <input
-          type="text"
-          placeholder="Search"
-          maxLength="20"
-          className="w-40 bg-transparent outline-none placeholder-gray-300 mx-4 py-2 text-white capitalize"
-        />
+       
       </div>
 
       {/* Navbar Links */}
       <ul className="text-sm font-bold hidden sm:flex text-white">
         <li className="p-4 hover:text-orange-500">
-          <Link href="#about-container">About</Link>
+          <Link href="/">Home</Link>
         </li>
         <li className="p-4 hover:text-orange-500">
-          <Link href="#services">Services</Link>
+          <Link href="/AboutUs">About</Link>
         </li>
         <li className="p-4 hover:text-orange-500">
-          <Link href="#reviews">Reviews</Link>
+          <Link href="/post/Projects">Projects</Link>
         </li>
         <li className="p-4 hover:text-orange-500">
-          <Link href="#contact">Contact</Link>
+          <Link href="/post/Blog">Blogs</Link>
+        </li>
+        <li className="p-4 hover:text-orange-500">
+          <Link href="/Contact">Contact</Link>
         </li>
       </ul>
 
@@ -94,27 +91,28 @@ const Header = () => {
       >
         <ul className="text-sm font-bold text-white">
           <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#about-container" onClick={handleMobileHeader}>
+            <Link href="/" onClick={handleMobileHeader}>
+              Home
+            </Link>
+          </li>
+          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
+            <Link href="/AboutUs" onClick={handleMobileHeader}>
               About
             </Link>
           </li>
           <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#services" onClick={handleMobileHeader}>
-              Services
+            <Link href="/post/Projects" onClick={handleMobileHeader}>
+              Projects
+            </Link>
+          </li>
+          
+          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
+            <Link href="/post/Blog" onClick={handleMobileHeader}>
+              Blogs
             </Link>
           </li>
           <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#deals" onClick={handleMobileHeader}>
-              Deals
-            </Link>
-          </li>
-          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#reviews" onClick={handleMobileHeader}>
-              Reviews
-            </Link>
-          </li>
-          <li className="mx-7 py-4 text-4xl hover:text-orange-500">
-            <Link href="#contact" onClick={handleMobileHeader}>
+            <Link href="/Contact" onClick={handleMobileHeader}>
               Contact
             </Link>
           </li>

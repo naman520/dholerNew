@@ -32,57 +32,7 @@ const Insta = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
-        <div className="grid sm:grid-cols-4 gap-5 m-5 p-5 mt-20 max-w-[1100px] ">
-          <Image
-            src={instaImg1}
-            alt="instagram image"
-            className="mx-5 my-3 w-[255px] h-[255px] rounded-lg hover:scale-110 ease-in duration-200"
-          />
-          <Image
-            src={instaImg2}
-            alt="instagram image"
-            className="mx-5 my-3 w-[255px] h-[255px] rounded-lg hover:scale-110  ease-in duration-200"
-          />
-          <div className="relative ">
-            <Image
-              src={instaImg3}
-              alt="instagram image"
-              className="mx-5 my-3 w-[255px] h-[255px]  rounded-lg hover:scale-110  ease-in duration-200"
-            />
-            <div className="absolute top-[5px] left-[5px] mt-[54px] ml-[66px]  p-[30px] flex justify-center items-center ">
-              <div className=" flex justify-center items-center bg-[#00000080]  p-[25px] gap-[10px] w-20 h-20 rounded-[120px] ">
-                <Image src={instaIcon} alt="insta icon" className="w-5 h-5 " />
-              </div>
-            </div>
-          </div>
-          <Image
-            src={instaImg4}
-            alt="instagram image"
-            className="mx-5 my-3 w-[255px] h-[255px] rounded-lg hover:scale-110  ease-in duration-200"
-          />
-          <Image
-            src={instaImg5}
-            alt="instagram image"
-            className="mx-5 my-3 w-[255px] h-[255px] rounded-lg hover:scale-110  ease-in duration-200"
-          />
-          <Image
-            src={instaImg6}
-            alt="instagram image"
-            className="mx-5 my-3 w-[255px] h-[255px] rounded-lg hover:scale-110  ease-in duration-200"
-          />
-          <Image
-            src={instaImg7}
-            alt="instagram image"
-            className="mx-5 my-3 w-[255px] h-[255px] rounded-lg hover:scale-110  ease-in duration-200"
-          />
-          <Image
-            src={instaImg8}
-            alt="instagram image"
-            className="mx-5 my-3 w-[255px] h-[255px] rounded-lg hover:scale-110  ease-in duration-200"
-          />
-        </div>
-      </div>
+      
     </div>
   );
 };

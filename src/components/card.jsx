@@ -4,7 +4,7 @@ import eyeIcon from '../assets/icons/eye.png';
 
 const Card = ({ imageSrc, title, price }) => {
   return (
-    <div className="w-[350px] h-[400px] hover:scale-105 ease-in duration-200 mx-auto bg-white rounded-xl shadow-md overflow-hidden dark:bg-slate-700">
+    <div className="w-[350px] h-[400px] hover:scale-105 ease-in duration-200 mx-auto bg-white rounded-xl space shadow-md overflow-hidden dark:bg-slate-700">
       <div className="flex flex-col items-start">
         <div className="relative">
           <Image
