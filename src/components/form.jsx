@@ -1,26 +1,26 @@
-import Image from 'next/image';
-import React, { useState } from 'react';
-import usernameIcon from '../assets/icons/Icon.png';
-import callIcon from '../assets/icons/callIcon.png';
-import emailIcon from '../assets/icons/email.png';
-import messageIcon from '../assets/icons/message.png';
+import Image from "next/image";
+import React, { useState } from "react";
+import usernameIcon from "../assets/icons/Icon.png";
+import callIcon from "../assets/icons/callIcon.png";
+import emailIcon from "../assets/icons/email.png";
+import messageIcon from "../assets/icons/message.png";
 
-import { useForm } from 'react-hook-form';
-import * as yup from 'yup';
-import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const schema = yup.object().shape({
-  firstName: yup.string().required('First name is required'),
-  lastName: yup.string().required('Last name is required'),
-  email: yup.string().email('Invalid email').required('Email is required'),
+  firstName: yup.string().required("First name is required"),
+  lastName: yup.string().required("Last name is required"),
+  email: yup.string().email("Invalid email").required("Email is required"),
   phoneNumber: yup
     .string()
-    .matches(/^[0-9]*$/, 'Invalid phone number, please enter numbers only')
-    .required('Phone number is required'),
-  message: yup.string().required('Message is required'),
+    .matches(/^[0-9]*$/, "Invalid phone number, please enter numbers only")
+    .required("Phone number is required"),
+  message: yup.string().required("Message is required"),
 });
 
 const Form = () => {
@@ -35,7 +35,7 @@ const Form = () => {
     try {
       setSubmitting(true);
       console.log(data);
-      toast.success('Form submitted successfully!');
+      toast.success("Form submitted successfully!");
       reset();
     } catch (error) {
       console.error(error);
@@ -45,7 +45,7 @@ const Form = () => {
   };
 
   return (
-    <div id="contact" className="relative p-4 mb-4">
+    <div id="contact" className="relative p-4 mb-4 bg-gradient-to-br from-transparent via-blue-900 to-transparent " >
       <div className="flex justify-center items-center  p-3">
         <button className="mt-[90px] mb-4 bg-orange-200 hover:bg-orange-600 px-4 py-1 rounded-2xl text-orange-500 hover:text-white h-8 w-28 font-black text-xs uppercase cursor-pointer ">
           contacts
@@ -53,10 +53,10 @@ const Form = () => {
       </div>
       <div className="relative ">
         <div className="flex flex-col justify-center items-center">
-          <p className=" text-8xl  sm:text-10xl text-blue-700 opacity-5 font-black text-center z-0 absolute top-0 left-0 w-full uppercase dark:text-white">
+          <p className=" text-8xl  sm:text-10xl text-black opacity-5 font-black text-center z-0 absolute top-0 left-0 w-full uppercase dark:text-white">
             contacts
           </p>
-          <p className="text-4xl text-blue-900 font-bold text-center z-20 relative capitalize mt-7 sm:mt-14 dark:text-gray-300">
+          <p className="text-4xl text-white font-bold text-center z-20 relative capitalize mt-7 sm:mt-14 dark:text-gray-300">
             get in touch now
           </p>
         </div>
@@ -81,10 +81,10 @@ const Form = () => {
               <div className="flex flex-col">
                 <label className="relative">
                   <input
-                    {...register('firstName')}
+                    {...register("firstName")}
                     name="firstName"
                     placeholder="First Name"
-                    className="flex justify-between items-center rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] capitalize mb-5 sm:mb-0 dark:bg-gray-600"
+                    className="flex justify-between items-center rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] capitalize mb-5 sm:mb-0 dark:bg-black"
                   />
                   <Image
                     src={usernameIcon}
@@ -102,10 +102,10 @@ const Form = () => {
               <div className="flex flex-col">
                 <label className="relative">
                   <input
-                    {...register('lastName')}
+                    {...register("lastName")}
                     name="lastName"
                     placeholder="Last Name"
-                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] capitalize mb-5 sm:mb-0 dark:bg-gray-600"
+                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] capitalize mb-5 sm:mb-0 dark:bg-black"
                   />
                   <Image
                     src={usernameIcon}
@@ -126,10 +126,10 @@ const Form = () => {
               <div className="flex flex-col">
                 <label className="relative ">
                   <input
-                    {...register('email')}
+                    {...register("email")}
                     name="email"
                     placeholder="Email Address"
-                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] capitalize  mb-5  sm:mb-0 dark:bg-gray-600"
+                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] capitalize  mb-5  sm:mb-0 dark:bg-black"
                   />
                   <Image
                     src={emailIcon}
@@ -147,10 +147,10 @@ const Form = () => {
               <div className="flex flex-col">
                 <label className="relative">
                   <input
-                    {...register('phoneNumber')}
+                    {...register("phoneNumber")}
                     name="phoneNumber"
                     placeholder="Phone Number"
-                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] mb-5  sm:mb-0 dark:bg-gray-600"
+                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[320px] h-[60px] mb-5  sm:mb-0 dark:bg-black"
                   />
                   <Image
                     src={callIcon}
@@ -172,10 +172,10 @@ const Form = () => {
               <div className="flex flex-col">
                 <label className="relative">
                   <input
-                    {...register('message')}
+                    {...register("message")}
                     name="message"
                     placeholder="Your Message"
-                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[670px] h-[60px] overflow-ellipsis overflow-hidden dark:bg-gray-600"
+                    className="flex justify-between items-center  rounded-xl py-[15px] px-[30px] shadow-md sm:w-[670px] h-[60px] overflow-ellipsis overflow-hidden dark:bg-black"
                   />
                   <Image
                     src={messageIcon}
